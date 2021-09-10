@@ -37,8 +37,8 @@ main {
 
 /* calculator parent, contains output and btns */
 .calculator {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: minmax(5rem, auto) 20rem;
   margin-top: 7rem;
   box-shadow: 0 0 14px 2px #778;
 }
@@ -46,16 +46,23 @@ main {
 .output {
   background-color: rgba(128, 128, 128, 0.425);
   width: 25rem;
-  height: 5rem;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  grid-row: 1/2;
+  word-break: break-all;
+  word-wrap: break-word;
+  padding: 1.4rem 1rem;
 }
 
 .output-text {
   font-size: 2em;
-  padding-right: 1em;
   color: #222;
+}
+
+.previous-operand {
+  color: #444;
 }
 
 /* Parent of all buttons */
@@ -66,22 +73,22 @@ main {
 }
 
 .btn {
-    background-color: rgb(231, 231, 231);
-    border: solid rgba(151, 151, 151, 0.432) 1px;
-    text-align: center;
-    color: #222;
-    padding: 1.7rem; 
-    font-size: 1.7em;
+  background-color: rgb(231, 231, 231);
+  border: solid rgba(151, 151, 151, 0.432) 1px;
+  text-align: center;
+  color: #222;
+  padding: 1.7rem;
+  font-size: 1.7em;
 }
 
 .btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .clear {
-    grid-column: 1/4;
+  grid-column: 1/4;
 }
 
 .zero {
-    grid-column: span 2;
+  grid-column: span 2;
 }
