@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 87, 219, 0.678),
+    rgba(131, 251, 255, 0.637)
+  );
+}
+
+.header {
+  background-color: rgba(158, 255, 245, 0.555);
+  text-align: center;
+  padding: 2rem;
+}
+.header h1 {
+  font-weight: lighter;
+}
+
+/* parent of calculator only */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/* calculator parent, contains output and btns */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  box-shadow: 0 0 14px 2px #778;
+}
+
+.output {
+  background-color: rgba(128, 128, 128, 0.425);
+  width: 25rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.output-text {
+  font-size: 2em;
+  padding-right: 1em;
+  color: #222;
+}
+
+.btns {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    background-color: rgb(231, 231, 231);
+    border: solid rgba(151, 151, 151, 0.432) 1px;
+    text-align: center;
+    color: #222;
+    padding: 1.7rem; 
+    font-size: 1.7em;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.clear {
+    grid-column: 1/4;
+}
+
+.zero {
+    grid-column: span 2;
+}
