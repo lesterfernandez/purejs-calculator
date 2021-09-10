@@ -58,6 +58,7 @@ main {
   color: #222;
 }
 
+/* Parent of all buttons */
 .btns {
   list-style: none;
   display: grid;
