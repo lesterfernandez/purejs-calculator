@@ -1,3 +1,4 @@
+/* Boilerplate... */
 *,
 *::before,
 *::after {
@@ -20,6 +21,7 @@ body {
   );
 }
 
+/* Header */
 .header {
   background-color: rgba(158, 255, 245, 0.555);
   text-align: center;
@@ -43,6 +45,7 @@ main {
   box-shadow: 0 0 14px 2px #778;
 }
 
+/* Output row, is parent of output text and previous operand text */
 .output {
   background-color: rgba(128, 128, 128, 0.425);
   width: 25rem;
@@ -56,11 +59,13 @@ main {
   padding: 1.4rem 1rem;
 }
 
+/* Text for current number */
 .output-text {
   font-size: 2em;
   color: #222;
 }
 
+/* Text for previous number */
 .previous-operand {
   color: #444;
 }
