@@ -38,7 +38,7 @@ main {
 /* calculator parent, contains output and btns */
 .calculator {
   display: grid;
-  grid-template-rows: minmax(5rem, auto) 20rem;
+  grid-template-rows: minmax(5rem, auto) auto;
   margin-top: 7rem;
   box-shadow: 0 0 14px 2px #778;
 }
