@@ -40,7 +40,7 @@ main {
 /* calculator parent, contains output and btns */
 .calculator {
   display: grid;
-  grid-template-rows: minmax(5rem, auto) auto;
+  grid-template-rows: minmax(7rem, auto) auto;
   margin-top: 7rem;
   box-shadow: 0 0 14px 2px #778;
 }
@@ -51,7 +51,7 @@ main {
   width: 25rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-end;
   grid-row: 1/2;
   word-break: break-all;
@@ -81,17 +81,19 @@ main {
   background-color: rgb(231, 231, 231);
   border: solid rgba(151, 151, 151, 0.432) 1px;
   text-align: center;
-  color: #222;
+  color: #333;
+  font-weight: 200;
   padding: 1.7rem;
   font-size: 1.7em;
 }
 
 .btn:hover {
   cursor: pointer;
+  background-color: rgb(180, 180, 180);
 }
 
 .clear {
-  grid-column: 1/4;
+  grid-column: 1/3;
 }
 
 .zero {
